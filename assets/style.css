@@ -1,0 +1,26 @@
+.logo {
+    height: 3.5rem;
+    width: auto;
+}
+
+::-moz-selection {
+    color: rgba(232, 232, 232, 1);
+    background: rgba(255, 0, 0, 0.7);
+}
+
+::selection {
+    color: rgba(232, 232, 232, 1);
+    background: rgba(255, 0, 0, 0.7);
+}
+
+.footer-egg {
+    color: rgba(255, 0, 0, 1);
+    text-decoration: underline 0.1em rgba(255, 255, 255, 0);
+    transition: all 250ms ease;
+    cursor: pointer;
+}
+
+.footer-egg:hover {
+    color: rgba(255, 255, 255, 1);
+    text-decoration-color: rgba(255, 255, 255, 1);
+}
