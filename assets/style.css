@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Biondi Sans";
+    src: url("fonts/BiondiSans/BiondiSans.eot");
+    src: url("fonts/BiondiSans/BiondiSans.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BiondiSans/BiondiSans.woff2")format("woff2"),
+    url("fonts/BiondiSans/BiondiSans.woff")format("woff"),
+    url("fonts/BiondiSans/BiondiSans.ttf")format("truetype"),
+    url("fonts/BiondiSans/BiondiSans.svg#Biondi Sans W00 Regular")format("svg");
+}
+
 .logo {
     height: 3.5rem;
     width: auto;
@@ -23,4 +33,19 @@
 .footer-egg:hover {
     color: rgba(255, 255, 255, 1);
     text-decoration-color: rgba(255, 255, 255, 1);
+}
+
+.marquee {
+    letter-spacing: .2rem;
+    font-family: "Biondi Sans";
+}
+
+.marquee {
+    transition: .25s all ease-in-out;
+    cursor: default;
+}
+
+.marquee:hover {
+    color: red;
+    transition: .25s all ease-in-out;
 }
