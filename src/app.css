@@ -1,0 +1,184 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+	font-family: "Biondi Sans";
+	src: url("/fonts/BiondiSans/BiondiSans.eot");
+	src: url("/fonts/BiondiSans/BiondiSans.eot?#iefix")format("embedded-opentype"),
+	url("/fonts/BiondiSans/BiondiSans.woff2")format("woff2"),
+	url("/fonts/BiondiSans/BiondiSans.woff")format("woff"),
+	url("/fonts/BiondiSans/BiondiSans.ttf")format("truetype"),
+	url("/fonts/BiondiSans/BiondiSans.svg#Biondi Sans W00 Regular")format("svg");
+}
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 224 71.4% 4.1%;
+		
+		--muted: 220 14.3% 95.9%;
+		--muted-foreground: 220 8.9% 46.1%;
+		
+		--popover: 0 0% 100%;
+		--popover-foreground: 224 71.4% 4.1%;
+		
+		--card: 0 0% 100%;
+		--card-foreground: 224 71.4% 4.1%;
+		
+		--border: 220 13% 91%;
+		--input: 220 13% 91%;
+		
+		--primary: 220.9 39.3% 11%;
+		--primary-foreground: 210 20% 98%;
+		
+		--secondary: 220 14.3% 95.9%;
+		--secondary-foreground: 220.9 39.3% 11%;
+		
+		--accent: 220 14.3% 95.9%;
+		--accent-foreground: 220.9 39.3% 11%;
+		
+		--destructive: 0 72.2% 50.6%;
+		--destructive-foreground: 210 20% 98%;
+		
+		--ring: 224 71.4% 4.1%;
+		
+		--radius: 0.5rem;
+	}
+	
+	.dark {
+		--background: 224 71.4% 4.1%;
+		--foreground: 210 20% 98%;
+		
+		--muted: 215 27.9% 16.9%;
+		--muted-foreground: 217.9 10.6% 64.9%;
+		
+		--popover: 224 71.4% 4.1%;
+		--popover-foreground: 210 20% 98%;
+		
+		--card: 224 71.4% 4.1%;
+		--card-foreground: 210 20% 98%;
+		
+		--border: 215 27.9% 16.9%;
+		--input: 215 27.9% 16.9%;
+		
+		--primary: 210 20% 98%;
+		--primary-foreground: 220.9 39.3% 11%;
+		
+		--secondary: 215 27.9% 16.9%;
+		--secondary-foreground: 210 20% 98%;
+		
+		--accent: 215 27.9% 16.9%;
+		--accent-foreground: 210 20% 98%;
+		
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 20% 98%;
+		
+		--ring: 216 12.2% 83.9%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+.slogan {
+	@apply
+		uppercase
+		font-bold
+		tracking-wider
+		cursor-default
+		transition-all
+		ease-in-out
+		duration-300;
+	font-family: "Biondi Sans";
+}
+
+.slogan:hover {
+	@apply
+		text-red-600
+		drop-shadow-xl
+		transition-all
+		ease-in-out
+		duration-300;
+}
+
+.carousel-slide_img {
+	@apply
+		h-[36rem] bg-cover;
+}
+
+.carousel-slide_text {
+	@apply
+		w-1/2
+		lg:w-fit
+		translate-y-[200%]
+		translate-x-20
+		select-none
+		/* rounded-lg
+		border-4
+		border-red-500 */
+		text-slate-50;
+}
+
+.carousel-slide_text h1 {
+	@apply
+		text-3xl
+		lg:text-7xl
+		uppercase
+		font-bold;
+}
+
+.carousel-slide_text h5 {
+	@apply
+		text-base
+		lg:text-3xl;
+}
+
+.content-grid {
+	@apply
+		container
+		py-6;
+}
+
+.content-grid_row {
+	@apply
+		grid
+		lg:grid-cols-2
+		py-6
+		gap-8;
+}
+
+.content-grid_img img {
+	@apply
+		rounded-lg
+		border-solid
+		border-2
+		border-black;
+}
+
+.content-grid_text {
+	@apply
+		flex
+		flex-col
+		justify-center;
+}
+
+.content-grid_text h1 {
+	@apply
+		text-3xl
+		lg:text-6xl
+		font-bold
+		pb-4;
+}
+
+.content-grid_text p {
+	@apply
+		text-sm
+		lg:text-base;
+}
