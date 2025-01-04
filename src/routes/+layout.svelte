@@ -21,6 +21,15 @@
 	let { children } = $props();
 </script>
 
+<style>
+	/* Fade in - Bottom */
+	@-webkit-keyframes -global-fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes -global-fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
+	/* Fade in - Left */
+ 	@-webkit-keyframes -global-fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes -global-fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+	/* Fade in - Right */
+ 	@-webkit-keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+</style>
+
 <header class="sticky top-0 z-50 bg-white shadow-xl select-none">
 	<div class="mx-auto flex flex-col lg:flex-row p-4 max-w-screen-xl items-center gap-2 lg:gap-8 px-6 lg:px-8 overflow-x-hidden">
 		<div class="flex-none">
