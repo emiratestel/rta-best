@@ -31,20 +31,20 @@
             </Carousel.Item>
             <Carousel.Item>
                 <div class="carousel-slide">
-                    <div class="carousel-slide_img" style="background-image: url('{base}/img/carousel/01.jpg');">
+                    <div class="carousel-slide_img" style="background-image: url('{base}/img/carousel/02.jpg');">
                         <div class="carousel-slide_text">
-                            <h1>Meter Scams</h1>
-                            <h5>Pay excess amount for invisible parking</h5>
+                            <h1>Metro</h1>
+                            <h5>Get inside the metro, yes it's punchual, except you wait 2 hours extra getting a spot, are you fat? Wait 4, only then you might find room</h5>
                         </div>
                     </div>
                 </div>
             </Carousel.Item>
             <Carousel.Item>
                 <div class="carousel-slide">
-                    <div class="carousel-slide_img" style="background-image: url('{base}/img/carousel/01.jpg');">
+                    <div class="carousel-slide_img" style="background-image: url('{base}/img/carousel/03.jpg');">
                         <div class="carousel-slide_text">
-                            <h1>Meter Scams</h1>
-                            <h5>Pay excess amount for invisible parking</h5>
+                            <h1>RTA HQ</h1>
+                            <h5>I heard this office runs 24/7, morning shift, evil businessmen, night shift, demonic businessmen</h5>
                         </div>
                     </div>
                 </div>
