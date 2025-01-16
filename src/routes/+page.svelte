@@ -55,50 +55,52 @@
     </Carousel.Root>
 </div>
 
-<div class="content-grid">
-    <div class="content-grid_row">
-        <div class="content-grid_img order-2">
-            <Saos animation={"fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
-                <img src="{base}/img/01.png" alt="">
-            </Saos>
-        </div>        
-        <div class="content-grid_text order-1">
-            <Saos animation={"fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
-                <h1>Weird public bus routes</h1>
-                <p>Yes Yes, how about 2 hours to go a route that takes 19 miniutes via car? Because fuck you lol</p>
-            </Saos>
+<div class="container">
+    <div class="content-grid">
+        <div class="content-grid_row">
+            <div class="content-grid_img order-2">
+                <Saos animation={"fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
+                    <img src="{base}/img/01.png" alt="">
+                </Saos>
+            </div>        
+            <div class="content-grid_text order-1">
+                <Saos animation={"fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
+                    <h1>Weird public bus routes</h1>
+                    <p>Yes Yes, how about 2 hours to go a route that takes 19 miniutes via car? Because fuck you lol</p>
+                </Saos>
+            </div>
         </div>
-    </div>
-    <div class="content-grid_row">
-        <div class="content-grid_img lg:order-1 order-2">
-            <Saos animation={"fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
-                <img src="{base}/img/02.jpg" alt="">
-            </Saos>
+        <div class="content-grid_row">
+            <div class="content-grid_img lg:order-1 order-2">
+                <Saos animation={"fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
+                    <img src="{base}/img/02.jpg" alt="">
+                </Saos>
+            </div>
+            <div class="content-grid_text lg:order-2 order-1">
+                <Saos animation={"fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
+                    <h1>Horrible car traffic</h1>
+                    <p>Wait did I just say car go fast broom vroom? No think again</p>
+                </Saos>
+            </div>
         </div>
-        <div class="content-grid_text lg:order-2 order-1">
-            <Saos animation={"fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
-                <h1>Horrible car traffic</h1>
-                <p>Wait did I just say car go fast broom vroom? No think again</p>
-            </Saos>
-        </div>
-    </div>
-    <div class="content-grid_row">
-        <div class="content-grid_img order-2">
-            <Saos animation={"fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
-                <img src="{base}/img/03.png" alt="">
-            </Saos>
-        </div>
-        <div class="content-grid_text order-1">
-            <Saos animation={"fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
-                <h1>It just sucks</h1>
-                <p>
-                    like did you see how you get an licence mmlol the tests are legit made so you fail and they make no practical sense what so ever like wtf
-                    <br/><br/>
-                    Mmmmm yes a 9187.50 AED course so I can learn to drive my Sunny of 5000 dirhams
-                    <br/><br/>
-                    Don't forget that a <a class="underline text-blue-800" href="https://www.zu.ac.ae/main/en/research/_publications/_documents/wages%20in%20the%20united%20arab%20emirates.pdf">median salary is just 3,250 AED</a>, less than the cost of any drivers license package!
-                </p>
-            </Saos>
+        <div class="content-grid_row">
+            <div class="content-grid_img order-2">
+                <Saos animation={"fade-in-left 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
+                    <img src="{base}/img/03.png" alt="">
+                </Saos>
+            </div>
+            <div class="content-grid_text order-1">
+                <Saos animation={"fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
+                    <h1>It just sucks</h1>
+                    <p>
+                        like did you see how you get an licence mmlol the tests are legit made so you fail and they make no practical sense what so ever like wtf
+                        <br/><br/>
+                        Mmmmm yes a 9187.50 AED course so I can learn to drive my Sunny of 5000 dirhams
+                        <br/><br/>
+                        Don't forget that a <a class="underline text-blue-800" href="https://www.zu.ac.ae/main/en/research/_publications/_documents/wages%20in%20the%20united%20arab%20emirates.pdf">median salary is just 3,250 AED</a>, less than the cost of any drivers license package!
+                    </p>
+                </Saos>
+            </div>
         </div>
     </div>
 </div>
