@@ -12,7 +12,7 @@
     }}
     plugins={[
         Autoplay({
-            delay: 2000,
+            delay: 5000,
         })
         ]}
         >
@@ -91,9 +91,13 @@
         <div class="content-grid_text order-1">
             <Saos animation={"fade-in-right 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both"} once={true}>
                 <h1>It just sucks</h1>
-                <p>like did you see how you get an licence mmlol the tests are legit made so you fail and they make no practical sense what so ever like wtf<br /><br />
-                    Mmmmm yes 10,000AED course so I can learn to drive my 5000 sunny<br /><br />
-                    Don't forget salary is just 2,500</p>
+                <p>
+                    like did you see how you get an licence mmlol the tests are legit made so you fail and they make no practical sense what so ever like wtf
+                    <br/><br/>
+                    Mmmmm yes a 9187.50 AED course so I can learn to drive my Sunny of 5000 dirhams
+                    <br/><br/>
+                    Don't forget that a <a class="underline text-blue-800" href="https://www.zu.ac.ae/main/en/research/_publications/_documents/wages%20in%20the%20united%20arab%20emirates.pdf">median salary is just 3,250 AED</a>, less than the cost of any drivers license package!
+                </p>
             </Saos>
         </div>
     </div>

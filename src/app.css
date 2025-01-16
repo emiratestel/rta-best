@@ -119,15 +119,17 @@
 
 .carousel-slide_img {
 	@apply
-	h-[36rem] bg-cover;
+	h-[36rem] bg-cover
+	flex
+	items-end
+	px-12
+	py-16;
 }
 
 .carousel-slide_text {
 	@apply
 	w-1/2
 	lg:w-fit
-	translate-y-[200%]
-	translate-x-20
 	select-none
 	/* rounded-lg
 	border-4
