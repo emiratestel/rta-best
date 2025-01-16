@@ -1,12 +1,16 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
-    export let pauseOnHover: boolean = false;
-    export let vertical: boolean = false;
-    export let repeat: number = 4;
-    export let reverse: boolean = false;
     
-    let className: any = "";
     export { className as class };
+
+    let {
+        pauseOnHover = false,
+        vertical = false,
+        repeat = 4,
+        reverse = false,
+        class: className,
+        children
+    } = $props();
 </script>
 
 <div
@@ -28,7 +32,7 @@ class={cn(
         "[animation-direction:reverse]": reverse,
     })}
     >
-    <slot>Default</slot>
+    {@render children?.()}
 </div>
 {/each}
 </div>
