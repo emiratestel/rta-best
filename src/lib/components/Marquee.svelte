@@ -1,8 +1,6 @@
 <script lang="ts">
     import { cn } from "$lib/utils";
     
-    export { className as class };
-
     let {
         pauseOnHover = false,
         vertical = false,

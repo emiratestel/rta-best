@@ -97,7 +97,7 @@
                         <br/><br/>
                         Mmmmm yes a 9187.50 AED course so I can learn to drive my Sunny of 5000 dirhams
                         <br/><br/>
-                        Don't forget that a <a class="underline text-blue-800" href="https://www.zu.ac.ae/main/en/research/_publications/_documents/wages%20in%20the%20united%20arab%20emirates.pdf">median salary is just 3,250 AED</a>, less than the cost of any drivers license package!
+                        Don't forget that a <a href="https://www.zu.ac.ae/main/en/research/_publications/_documents/wages%20in%20the%20united%20arab%20emirates.pdf">median salary is just 3,250 AED</a>, less than the cost of any drivers license package!
                     </p>
                 </Saos>
             </div>
