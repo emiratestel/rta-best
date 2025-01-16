@@ -56,7 +56,8 @@
 <footer class="flex justify-center items-center bg-red-600 text-white font-semibold text-base p-6">
 	<p>Copyright &copy;</p>
 	<AnimatedShinyText
-		class={clicked ? "underline inline-flex items-center justify-center transition-all ease-in-out duration-200 cursor-text mx-1.5" : "underline decoration-dashed inline-flex items-center justify-center cursor-pointer mx-1.5"}>
+		class={"underline" + clicked ? " transition-all ease-in-out duration-200 cursor-text mx-1.5" : "decoration-dashed cursor-pointer mx-1.5"}
+	>
 		<!-- svelte-ignore a11y_click_events_have_key_events -->
 		<!-- svelte-ignore a11y_no_static_element_interactions -->
 		<span onclick={footerEaster}>{copyrightText}</span>
