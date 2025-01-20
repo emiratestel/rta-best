@@ -52,7 +52,7 @@
 						{#each data['big-brain-content'] as content}
 							<li>
 								<TextAnimatedDecoration>
-									<a class="text-gray-500 transition hover:text-gray-500/75" href="/big-brain-content/{content.slug}/">{content.title}</a>
+									<a class="text-gray-500 transition hover:text-gray-500/75" href="{base}/big-brain-content/{content.slug}/">{content.title}</a>
 								</TextAnimatedDecoration>
 							</li>
 						{/each}
@@ -79,7 +79,7 @@
 											<li>
 												<TextAnimatedDecoration>
 													<Sheet.Close>
-														<a class="text-gray-500 transition hover:text-gray-500/75" href="/big-brain-content/{content.slug}/">{content.title}</a>
+														<a class="text-gray-500 transition hover:text-gray-500/75" href="{base}/big-brain-content/{content.slug}/">{content.title}</a>
 													</Sheet.Close>
 												</TextAnimatedDecoration>
 											</li>
