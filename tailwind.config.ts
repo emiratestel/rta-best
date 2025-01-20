@@ -79,14 +79,6 @@ const config: Config = {
 						transform: "translateY(calc(-100% - var(--gap)))"
 					},
 				},
-				shimmer: {
-					"0%, 90%, 100%": {
-						"background-position": "calc(-100% - var(--shimmer-width)) 0",
-					},
-					"30%, 60%": {
-						"background-position": "calc(100% + var(--shimmer-width)) 0",
-					},
-				},
 			}
 		}
 	},

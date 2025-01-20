@@ -87,12 +87,6 @@
 	}
 }
 
-a[href] {
-	@apply
-	underline
-	text-blue-700;
-}
-
 @layer base {
 	* {
 		@apply border-border;
@@ -104,6 +98,7 @@ a[href] {
 
 .slogan {
 	@apply
+	text-sm
 	uppercase
 	font-bold
 	tracking-wider

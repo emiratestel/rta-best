@@ -1,13 +1,19 @@
 <svelte:head>
-	<title>RTA BEST 💯</title>
+<title>RTA BEST 💯</title>
 </svelte:head>
 
 <script lang="ts">
 	import { base } from '$app/paths';
 	import '../app.css';
+	
+	import data from '$lib/data';
+	import { cn } from '$lib/utils';
+	import * as Sheet from "$lib/components/ui/sheet";
+	import { Button } from "$lib/components/ui/button";
 	import Marquee from '$lib/components/Marquee.svelte';
-	import AnimatedShinyText from '$lib/components/AnimatedShinyText.svelte';
-
+	import TextAnimatedDecoration from '$lib/components/TextAnimatedDecoration.svelte';
+	import { Motion } from "svelte-motion";
+	
 	let currentYear = new Date().getFullYear();
 	
 	let copyrightText = $state("SRTA");
@@ -25,21 +31,68 @@
 	/* Fade in - Bottom */
 	@-webkit-keyframes -global-fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}@keyframes -global-fade-in-bottom{0%{-webkit-transform:translateY(50px);transform:translateY(50px);opacity:0}100%{-webkit-transform:translateY(0);transform:translateY(0);opacity:1}}
 	/* Fade in - Left */
- 	@-webkit-keyframes -global-fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes -global-fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+	@-webkit-keyframes -global-fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes -global-fade-in-left{0%{-webkit-transform:translateX(-50px);transform:translateX(-50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 	/* Fade in - Right */
- 	@-webkit-keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
+	@-webkit-keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 </style>
 
-<header class="sticky top-0 z-50 bg-white shadow-xl select-none">
-	<div class="mx-auto flex flex-col lg:flex-row p-4 max-w-screen-xl items-center gap-2 lg:gap-8 px-6 lg:px-8 overflow-x-hidden">
-		<div class="flex-none">
-			<a class="block text-red-600" href="{base}/">
-				<span class="sr-only">Home</span>
-				<img class="w-80 h-auto" src="{base}/img/RTA_Dubai_logo.png" alt="RTA">
-			</a>
+<header class="sticky top-0 z-50 bg-white/75 backdrop-blur select-none">
+	<div class="mx-auto flex flex-col p-3 max-w-screen-xl">
+		<div class="flex h-16 items-center gap-8">
+			<div class="md:flex-none">
+				<a class="block text-red-600" href="{base}/">
+					<span class="sr-only">Home</span>
+					<img class="w-80 h-auto" src="{base}/img/RTA_Dubai_logo.png" alt="RTA">
+				</a>
+			</div>
+			
+			<div class="flex flex-1 items-center justify-end">
+				<nav class="hidden md:block">
+					<ul class="flex items-center gap-6 text-base">
+						{#each data['big-brain-content'] as content}
+							<li>
+								<TextAnimatedDecoration>
+									<a class="text-gray-500 transition hover:text-gray-500/75" href="/big-brain-content/{content.slug}/">{content.title}</a>
+								</TextAnimatedDecoration>
+							</li>
+						{/each}
+					</ul>
+				</nav>
+				
+				<div class="block text-gray-600 transition hover:text-gray-600/75 md:hidden">
+					<Sheet.Root>
+						<Sheet.Trigger asChild let:builder>
+							<Button builders={[builder]} variant="outline" class="px-2 opacity-75">
+								<svg xmlns="http://www.w3.org/2000/svg" class="size-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+									<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+								</svg>
+							</Button>
+						</Sheet.Trigger>
+						<Sheet.Content side="left" class="text-left">
+							<Sheet.Header>
+								<Sheet.Title class="pb-2">
+									<span class="text-2xl">Menu</span>
+								</Sheet.Title>
+								<Sheet.Description>
+									<ul class="text-lg">
+										{#each data['big-brain-content'] as content}
+											<li>
+												<TextAnimatedDecoration>
+													<Sheet.Close>
+														<a class="text-gray-500 transition hover:text-gray-500/75" href="/big-brain-content/{content.slug}/">{content.title}</a>
+													</Sheet.Close>
+												</TextAnimatedDecoration>
+											</li>
+										{/each}
+									</ul>
+								</Sheet.Description>
+							</Sheet.Header>
+						</Sheet.Content>
+					</Sheet.Root>
+				</div>
+			</div>
 		</div>
-		
-		<div class="grow w-full items-center justify-end md:justify-between text-right">
+		<div>
 			<Marquee class="[--duration:10s]">
 				{#each {length: 3} as _}
 					<p class="slogan">We keep Dubai stuck&trade;</p>
@@ -47,7 +100,7 @@
 			</Marquee>
 		</div>
 	</div>
-</header>  
+</header>
 
 <div>
 	{@render children()}
@@ -55,12 +108,12 @@
 
 <footer class="flex justify-center items-center bg-red-600 text-white font-semibold text-base p-6">
 	<p>Copyright &copy;</p>
-	<AnimatedShinyText
-		class={"underline" + clicked ? " transition-all ease-in-out duration-200 cursor-text mx-1.5" : "decoration-dashed cursor-pointer mx-1.5"}
-	>
-		<!-- svelte-ignore a11y_click_events_have_key_events -->
-		<!-- svelte-ignore a11y_no_static_element_interactions -->
-		<span onclick={footerEaster}>{copyrightText}</span>
-	</AnimatedShinyText> 
+	<Motion let:motion initial={{ backgroundPosition: "200% 0" }} animate={{ backgroundPosition: "-200% 0" }} transition={{ repeat: Infinity, duration: 2, ease: "linear", }}>
+		<p use:motion class={cn("underline transition-all ease-in-out duration-200 mx-1.5 bg-[linear-gradient(110deg,#969696,35%,#fff,50%,#969696,75%,#969696)] bg-[length:200%_100%] bg-clip-text text-transparent", clicked ? "cursor-text" : "decoration-dashed cursor-pointer")}>
+			<!-- svelte-ignore a11y_click_events_have_key_events -->
+			<!-- svelte-ignore a11y_no_static_element_interactions -->
+			<span onclick={footerEaster}>{copyrightText}</span>
+		</p>
+	</Motion>
 	<p>{currentYear}</p>
 </footer>
