@@ -1,8 +1,8 @@
 export default {
     "big-brain-content": [
         {
-            "slug": "bjk-ai-shit",
-            "title": "Bjk AI Shit",
+            "slug": "gpt-ai-shit",
+            "title": "GPT AI Shit",
             "content": `<h1 class=\"text-4xl\">The Endless Jam</h1><br>
 <br><p>In the heart of Dubai, where the skyline kissed the clouds and luxury was a way of life, there existed a phenomenon that no amount of wealth could escape: the unending traffic. It was a daily ritual, a dance of frustration and patience that residents had come to accept as part of their lives.</p>
 <br><p>Every morning, as the sun began to rise over the Burj Khalifa, the streets filled with a cacophony of honks and revving engines. The roads, designed to accommodate the city’s rapid growth, were now a labyrinth of vehicles, each one inching forward in a seemingly eternal line. The shimmering heat radiated off the asphalt, creating a mirage that teased drivers with the promise of movement just beyond their reach.</p>
@@ -27,8 +27,8 @@ export default {
 <br><p>But for now, there was nothing to do but wait it out, to be patient and resigned to the fact that this was simply the price of living in one of the most dynamic and rapidly growing cities in the world. With a deep sigh, Sami settled in for the long haul, his eyes fixed on the endless line of taillights stretching out before him.</p>`
         },
         {
-            "slug": "llllllamaaaaa",
-            "title": "Llllllamaaaaa",
+            "slug": "llama",
+            "title": "Llama",
             "content": `<p>It was supposed to be a quick drive home from the office, but as soon as Amira stepped into her car, she knew she was in for a long night. The roads were already congested, a sea of brake lights stretching out before her like a red carpet.</p>
 <br><p>She sighed and settled in, the air conditioning blowing a gentle breeze as she inched her way forward. The radio played a lively mix of Arabic pop and Western hits, but even the upbeat tunes couldn't lift her spirits.</p>
 <br><p>As the minutes ticked by, Amira found herself stuck in a never-ending cycle of stop-and-go traffic. She was just one of thousands of cars crawling along the Sheikh Zayed Road, each driver trapped in their own private world of frustration.</p>

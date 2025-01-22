@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>RTA BEST 💯</title>
+</svelte:head>
+
 <script lang="ts">
     import { base } from "$app/paths";
     import Saos from "saos";
@@ -8,16 +12,7 @@
 </script>
 
 <div>
-    <Carousel.Root
-    opts={{
-        loop: true,
-    }}
-    plugins={[
-        Autoplay({
-            delay: 5000,
-        })
-        ]}
-        >
+    <Carousel.Root opts={{ loop: true, }} plugins={[ Autoplay({ delay: 5000, }) ]}>
         <Carousel.Content>
             <Carousel.Item>
                 <div class="carousel-slide">

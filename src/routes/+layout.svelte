@@ -1,5 +1,5 @@
 <svelte:head>
-<title>RTA BEST 💯</title>
+	<title>RTA BEST 💯</title>
 </svelte:head>
 
 <script lang="ts">
@@ -10,10 +10,16 @@
 	import { cn } from '$lib/utils';
 	import * as Sheet from "$lib/components/ui/sheet";
 	import { Button } from "$lib/components/ui/button";
+	// import * as Dialog from "$lib/components/ui/dialog";
+	import * as DropdownMenu from "$lib/components/ui/dropdown-menu";
 	import Marquee from '$lib/components/Marquee.svelte';
 	import TextAnimatedDecoration from '$lib/components/TextAnimatedDecoration.svelte';
-	import { Motion } from "svelte-motion";
-	
+	import { Motion } from 'svelte-motion';
+	// import { localStore } from '$lib/localStore.svelte.ts';
+
+	// let posterDialogViewed = localStore('posterDialogViewed', '0');
+	// let dialogState = $state(posterDialogViewed.value == '1' ? false : true);
+
 	let currentYear = new Date().getFullYear();
 	
 	let copyrightText = $state("SRTA");
@@ -36,6 +42,14 @@
 	@-webkit-keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}@keyframes -global-fade-in-right{0%{-webkit-transform:translateX(50px);transform:translateX(50px);opacity:0}100%{-webkit-transform:translateX(0);transform:translateX(0);opacity:1}}
 </style>
 
+<!-- <Dialog.Root bind:open={dialogState} onOpenChange={() => {posterDialogViewed.value = "1"}}>
+	<Dialog.Content>
+		<Dialog.Description>
+			<img src="{base}/img/dialog-poster.webp" alt="RTA RTA RTA">
+		</Dialog.Description>
+	</Dialog.Content>
+</Dialog.Root> -->
+
 <header class="sticky top-0 z-50 bg-white/75 backdrop-blur select-none">
 	<div class="mx-auto flex flex-col p-3 max-w-screen-xl">
 		<div class="flex h-16 items-center gap-8">
@@ -49,13 +63,24 @@
 			<div class="flex flex-1 items-center justify-end">
 				<nav class="hidden md:block">
 					<ul class="flex items-center gap-6 text-base">
-						{#each data['big-brain-content'] as content}
-							<li>
+						<DropdownMenu.Root>
+							<DropdownMenu.Trigger>
 								<TextAnimatedDecoration>
-									<a class="text-gray-500 transition hover:text-gray-500/75" href="{base}/big-brain-content/{content.slug}/">{content.title}</a>
+									<span class="text-gray-500 transition hover:text-gray-500/75">AI lore</span>
 								</TextAnimatedDecoration>
-							</li>
-						{/each}
+							</DropdownMenu.Trigger>
+							<DropdownMenu.Content>
+								<DropdownMenu.Group>
+									{#each data['big-brain-content'] as content}
+										<DropdownMenu.Item>
+											<TextAnimatedDecoration>
+												<a class="text-gray-500 transition hover:text-gray-500/75" href="{base}/big-brain-content/{content.slug}/">{content.title}</a>
+											</TextAnimatedDecoration>
+										</DropdownMenu.Item>
+									{/each}
+								</DropdownMenu.Group>
+							</DropdownMenu.Content>
+						</DropdownMenu.Root>
 					</ul>
 				</nav>
 				
