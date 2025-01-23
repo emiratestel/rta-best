@@ -1,4 +1,5 @@
 import { error } from "@sveltejs/kit";
+import type { EntryGenerator } from "./$types";
 import data from "$lib/data";
 
 export function load({ params }) {
@@ -12,3 +13,5 @@ export function load({ params }) {
 
     return slug;
 }
+
+export const entries: EntryGenerator = () => { return data["big-brain-content"] }
