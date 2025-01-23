@@ -66,7 +66,12 @@
 						<DropdownMenu.Root>
 							<DropdownMenu.Trigger>
 								<TextAnimatedDecoration>
-									<a class="text-gray-500 transition hover:text-gray-500/75" href="/big-brain-content/{content.slug}/">{content.title}</a>
+									<a class="text-gray-500 transition hover:text-gray-500/75">
+										Big brain content
+										<svg class="inline-block size-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+											<path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0-3.75-3.75M17.25 21 21 17.25" />
+										</svg>
+									</a>
 								</TextAnimatedDecoration>
 							</DropdownMenu.Trigger>
 							<DropdownMenu.Content>
