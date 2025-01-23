@@ -52,6 +52,10 @@
     </Carousel.Root>
 </div>
 
+<div class="container flex justify-center items-center pt-10">
+    <audio controls src="{base}/audio/rta_best_final.m4a"></audio>
+</div>
+
 <div class="container">
     <div class="content-grid">
         <div class="content-grid_row">
